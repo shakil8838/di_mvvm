@@ -17,7 +17,7 @@ interface NetworkInterface {
     suspend fun letLogin(
         @Field("email") email: String,
         @Field("password") password: String
-    ): MutableLiveData<String>
+    ): String
 
     @FormUrlEncoded
     @POST("")
